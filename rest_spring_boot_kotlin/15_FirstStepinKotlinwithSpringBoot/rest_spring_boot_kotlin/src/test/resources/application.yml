@@ -1,0 +1,18 @@
+cors:
+  originPatterns: http://localhost:3000,http://localhost:8080,https://www.fabriciounix.com.br
+server:
+  port: 8888
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  jpa:
+    hibernate:
+      ddl-auto: none
+    propertiers:
+      hibernate:
+        dialect: org.hibernate.dialect.Mysql8Dialect
+    show-sql: false
+spring-doc:
+  path-to-match:
+    - /api/**/v1/**
+
